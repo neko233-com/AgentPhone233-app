@@ -1,19 +1,19 @@
 {
   "format": 1,
   "packageName": "com.neko233.app",
-  "versionCode": 45,
-  "versionName": "1.1.1",
+  "versionCode": 46,
+  "versionName": "1.1.2",
   "minSdk": 29,
   "apk": {
     "name": "app-release.apk",
-    "size": 112237070,
-    "sha256": "a3032aebe2d60a42cbf54b95379ce5fdbdebc3846d32491971ad3b88b4f5a9b1",
-    "urls": ["https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.1/app-release.apk"]
+    "size": 80685349,
+    "sha256": "841fad7d8145031cc8aa6c586dd5ed5903bf6b8e1de85b7cae690d4a37fb149d",
+    "urls": ["https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.2/app-release.apk"]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "预览版：修复模拟器引擎启动，增加内置无线调试；MiMo 实测和实体局域网发现仍待验证。",
-    "en": "Preview: emulator startup fixes and built-in wireless debugging; MiMo live verification and physical LAN discovery remain unverified."
+    "zh": "预览版：缩小包体并修复模拟器图像阻塞；MuMu 图片输入采用文字/OCR 回退，MiMo 和实体局域网仍待验证。",
+    "en": "Preview: smaller APK and emulator image-stall mitigation; MuMu uses text/OCR fallback, while MiMo and physical LAN remain unverified."
   },
-  "publishedAt": "2026-11-04T04:52:00Z"
+  "publishedAt": "2026-11-04T06:51:33Z"
 }
