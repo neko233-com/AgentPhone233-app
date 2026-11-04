@@ -1,19 +1,21 @@
 {
   "format": 1,
   "packageName": "com.neko233.app",
-  "versionCode": 47,
-  "versionName": "1.1.3",
+  "versionCode": 48,
+  "versionName": "1.1.4",
   "minSdk": 29,
   "apk": {
     "name": "app-release.apk",
-    "size": 80685628,
-    "sha256": "49c61c3d97768662c5b32ee2a469f3c89a81266ab607c2d36437e12ed158da51",
-    "urls": ["https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.3/app-release.apk"]
+    "size": 80687583,
+    "sha256": "ec3a076406e28c68330b01272159bc3e280e21ec2013effd87a79d2846a905bf",
+    "urls": [
+      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.4/app-release.apk"
+    ]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "预览版：修复模拟器图像解码及截图模型调用；MiMo 和实体局域网仍待验证。",
-    "en": "Preview: fixes emulator image decoding and screenshot model calls; MiMo and physical LAN remain unverified."
+    "zh": "预览版：完善内置无线调试与手机操作工具的接入；MiMo 和实体局域网仍待验证。",
+    "en": "Preview: improves built-in wireless debugging integration; MiMo and physical LAN remain unverified."
   },
-  "publishedAt": "2026-11-04T07:33:51Z"
+  "publishedAt": "2026-11-04T08:32:50Z"
 }
