@@ -1,21 +1,19 @@
 {
   "format": 1,
   "packageName": "com.neko233.app",
-  "versionCode": 44,
-  "versionName": "1.1.0",
+  "versionCode": 45,
+  "versionName": "1.1.1",
   "minSdk": 29,
   "apk": {
     "name": "app-release.apk",
-    "size": 103039468,
-    "sha256": "c195f3312ca87335b00f72016efa74cbd7d2d0de55e58a12b09c7a9440b97a10",
-    "urls": [
-      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.0/app-release.apk"
-    ]
+    "size": 112237070,
+    "sha256": "a3032aebe2d60a42cbf54b95379ce5fdbdebc3846d32491971ad3b88b4f5a9b1",
+    "urls": ["https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.1/app-release.apk"]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "预览版：支持 OpenAI 兼容模型、手机控制和局域网管理；内置无线调试与 MiMo 实测仍在完善。",
-    "en": "Preview: OpenAI-compatible providers, phone control and LAN management; built-in wireless debugging and MiMo live verification remain in progress."
+    "zh": "预览版：修复模拟器引擎启动，增加内置无线调试；MiMo 实测和实体局域网发现仍待验证。",
+    "en": "Preview: emulator startup fixes and built-in wireless debugging; MiMo live verification and physical LAN discovery remain unverified."
   },
-  "publishedAt": "2026-11-04T03:01:40Z"
+  "publishedAt": "2026-11-04T04:52:00Z"
 }
