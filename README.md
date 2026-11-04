@@ -2,7 +2,7 @@
 
 原生 Kotlin Android 手机 Agent，基于 [DSH-Android v0.3.8](https://github.com/jackwener/DSH-Android/tree/v0.3.8) 的 Compose 界面、Node.js 24 和 Android 能力桥接架构。
 
-[下载 1.1.6 预览版 APK](https://github.com/neko233-com/AgentPhone233-app/releases/tag/v1.1.6) · Android 10 及以上 · arm64-v8a · 约 77 MiB
+[下载 1.1.7 预览版 APK](https://github.com/neko233-com/AgentPhone233-app/releases/tag/v1.1.7) · Android 10 及以上 · arm64-v8a · 约 77 MiB
 
 支持接入 OpenAI 兼容服务，以及 DeepSeek、MiMo 预设；可获取上游模型列表。应用自动创建私有工作目录，并支持设备操作、任务用量监控和局域网管理。
 
@@ -10,6 +10,6 @@
 
 本版使用新的私有发布签名。若已安装不同签名的旧版，可能需要卸载重装；卸载会删除该应用的数据。
 
-APK SHA-256：`f516b60a8938e65a3d6dc44d449739c4d00ad33729900b3a2b652e04f0bf041f`
+APK SHA-256：`5b14fd27bb6626635f28acdeec3146361fb2c7ed2d3f99f69055539a72f48c14`
 
 本仓库仅发布安装包、更新清单与许可证。原项目采用 Apache-2.0，相关依赖的许可证随应用提供。

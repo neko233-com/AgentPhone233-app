@@ -1,21 +1,21 @@
 {
   "format": 1,
   "packageName": "com.neko233.app",
-  "versionCode": 50,
-  "versionName": "1.1.6",
+  "versionCode": 51,
+  "versionName": "1.1.7",
   "minSdk": 29,
   "apk": {
     "name": "app-release.apk",
-    "size": 80723534,
-    "sha256": "f516b60a8938e65a3d6dc44d449739c4d00ad33729900b3a2b652e04f0bf041f",
+    "size": 80724421,
+    "sha256": "5b14fd27bb6626635f28acdeec3146361fb2c7ed2d3f99f69055539a72f48c14",
     "urls": [
-      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.6/app-release.apk"
+      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.7/app-release.apk"
     ]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "预览版：主界面竖屏，内置无线调试支持后台虚拟屏并改善断线恢复。",
-    "en": "Preview: portrait UI and built-in wireless-debugging background display with recovery improvements."
+    "zh": "预览版：修复长回复结束后自动回到对话底部。",
+    "en": "Preview: fixes automatic scrolling to the end of long completed replies."
   },
-  "publishedAt": "2026-11-04T12:08:49Z"
+  "publishedAt": "2026-11-04T12:42:07Z"
 }
