@@ -1,21 +1,20 @@
 {
   "format": 1,
   "packageName": "com.neko233.app",
-  "versionCode": 51,
-  "versionName": "1.1.7",
+  "versionCode": 52,
+  "versionName": "1.1.8",
   "minSdk": 29,
   "apk": {
     "name": "app-release.apk",
-    "size": 80724421,
-    "sha256": "5b14fd27bb6626635f28acdeec3146361fb2c7ed2d3f99f69055539a72f48c14",
+    "size": 80743955,
+    "sha256": "e380c117e50c4a4e918188e13b5dede11edf768785d3e8c9285047c598e70f9d",
     "urls": [
-      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.7/app-release.apk"
+      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.8/app-release.apk"
     ]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "预览版：修复长回复结束后自动回到对话底部。",
-    "en": "Preview: fixes automatic scrolling to the end of long completed replies."
+    "zh": "## AgentPhone233 1.1.8\n\n- 支持搜索、添加、修改和删除已有模型；所有模型服务的 Base URL 均可覆盖。\n- 区分 MiMo 普通 API 与不同地区的 Token Plan，并根据模型能力提供推理开关或档位。\n- 修复 MiMo 关闭思考时因旧客户端标识导致设置未生效的问题。\n- 改进无线调试断线后的自动重连，保留主动断开的选择。\n\n已在模拟器验证 MiMo 真实接口和模型思考开关，以及由 Agent 安装 TapTap 并搜索原神。Android 首次安装未知来源应用时仍需授予系统权限；测试中单独授予了该权限。不同设备和局域网环境仍可能存在差异。"
   },
-  "publishedAt": "2026-11-04T12:42:07Z"
+  "publishedAt": "2026-11-05T01:54:35Z"
 }
