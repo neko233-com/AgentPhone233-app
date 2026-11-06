@@ -9,12 +9,12 @@
     "size": 79886196,
     "sha256": "d691a155c4a19c39f74a7951f69c6f678af98b02e8e3e702ef15f697adf02e05",
     "urls": [
-      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.0/app-release.apk"
+      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.2/app-release.apk"
     ]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "## AgentPhone233 1.2.0\n\n- 完善内网多设备管理：分页查看对话、查看手机与 Agent 后台画面、批量任务、插话和按会话停止。\n- 改进内置无线调试：共享并发重连、允许停止连接，并优先尝试已保存且验证过的端口。\n- 改进任务中断恢复、重复请求保护和错误提示。\n\nDeepSeek 此前已在 MuMu 完成真实模型卸载并安装 TapTap、搜索原神的验证；本次相关改动使用本地模型夹具及模拟器验证，没有重复调用真实接口。真实物理局域网和手机的组合尚未完成验收。Android 仍需要用户授予无障碍等系统权限。\n\nWindows x64 内网管理器预览包随此版本提供。模拟器集群已验证管理器；新构建二进制与此前运行的测试版除 Go 构建标识和版本信息外逐字节一致。本次单独启动新文件的检查被运行环境的自动审批拦截。"
+    "zh": "## AgentPhone233 1.2.2 整合发布\n\nAPK 与电脑管理器在同一版提供：\n\n- 首次使用推荐下载 **all-in-one.zip**，解压即可得到 Android APK 和 Windows x64 管理器。\n- 也可单独下载 `app-release.apk` 或 Windows 管理器 ZIP。\n- 实际组件版本：Android **1.2.0**、管理器 **1.2.2**。沿用已验证的正式 APK，安装包和签名未改动。\n\n管理器默认监听 **0.0.0.0:23833**。本机打开 `http://127.0.0.1:23833`；其他内网电脑打开 `http://服务器内网IP:23833`，首次输入服务器本机页面“显示内网访问码”提供的访问码。\n\n两台 MuMu 的正式 APK 多机控制已通过，包括配对、并发手机工具、历史与画面、同时插话、单台停止隔离和恢复。内网 IP 浏览器与 MuMu 的登录/API 请求、UDP leader 发现、Go 竞态检查及 EXE 启动自检也已通过。本次按模拟器标准完成验收。\n\nAndroid APK 约 **79.89 MB**，管理器 ZIP 约 **3.44 MB**。文件校验值见 SHA256SUMS.txt，整合包内另有各组件的版本及校验信息。"
   },
-  "publishedAt": "2026-11-06T11:43:25Z"
+  "publishedAt": "2026-11-06T12:57:29Z"
 }
