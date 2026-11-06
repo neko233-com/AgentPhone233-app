@@ -1,20 +1,20 @@
 {
   "format": 1,
   "packageName": "com.neko233.app",
-  "versionCode": 53,
-  "versionName": "1.1.9",
+  "versionCode": 54,
+  "versionName": "1.2.0",
   "minSdk": 29,
   "apk": {
     "name": "app-release.apk",
-    "size": 80767025,
-    "sha256": "799639e67f5b0fc9b2aac6e24057c43e7110c3924a3a09e1d5b251c98c56c09b",
+    "size": 79886196,
+    "sha256": "d691a155c4a19c39f74a7951f69c6f678af98b02e8e3e702ef15f697adf02e05",
     "urls": [
-      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.1.9/app-release.apk"
+      "https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.0/app-release.apk"
     ]
   },
   "signerSha256": "e802f78d10092f5932e9b15f6f6cd3b7b20bb36ddea535893001a8b94790204d",
   "notes": {
-    "zh": "## AgentPhone233 1.1.9\n\n- 改进手机操作中的屏幕识别、安装完成等待和页面滚动；安装完成状态由系统安装界面确认。\n- 改进 Agent 后台屏幕退出后的音频恢复，并避免设备任务状态不明时误操作前台应用。\n- 通知中区分输入、输出和缓存 Token；供应商统计和实际计费可能不同。\n- 完善局域网多设备发现、任务跟踪及续聊。电脑端管理器仍处于开发中，实体局域网尚未完成验收。\n\n已在 MuMu 使用真实 DeepSeek 和 MiMo 完成卸载并安装 TapTap、搜索原神的测试；其他屏幕和局域网场景也使用 Android 模拟器及本地模型测试服务验证。首次使用仍需按 Android 要求授予无障碍等系统权限；不同手机和模型的操作结果可能不同。"
+    "zh": "## AgentPhone233 1.2.0\n\n- 完善内网多设备管理：分页查看对话、查看手机与 Agent 后台画面、批量任务、插话和按会话停止。\n- 改进内置无线调试：共享并发重连、允许停止连接，并优先尝试已保存且验证过的端口。\n- 改进任务中断恢复、重复请求保护和错误提示。\n\nDeepSeek 此前已在 MuMu 完成真实模型卸载并安装 TapTap、搜索原神的验证；本次相关改动使用本地模型夹具及模拟器验证，没有重复调用真实接口。真实物理局域网和手机的组合尚未完成验收。Android 仍需要用户授予无障碍等系统权限。\n\nWindows x64 内网管理器预览包随此版本提供。模拟器集群已验证管理器；新构建二进制与此前运行的测试版除 Go 构建标识和版本信息外逐字节一致。本次单独启动新文件的检查被运行环境的自动审批拦截。"
   },
-  "publishedAt": "2026-11-05T11:25:34Z"
+  "publishedAt": "2026-11-06T11:43:25Z"
 }
