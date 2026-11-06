@@ -1,32 +1,34 @@
 # AgentPhone233
 
-原生 Kotlin Android 手机 Agent，基于 [DSH-Android v0.3.8](https://github.com/jackwener/DSH-Android/tree/v0.3.8) 的 Compose 界面、Node.js 24 和 Android 能力桥接架构。
+原生 Kotlin Android 手机 Agent，支持 OpenAI 兼容服务、DeepSeek/MiMo 预设和电脑 Web 多设备管理。
 
-- [下载 Android 1.2.0 APK](https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.0/app-release.apk)：约 **79.89 MB**，Android 10 及以上，arm64-v8a。
-- [下载 Windows x64 内网管理器 1.2.2](https://github.com/neko233-com/AgentPhone233-app/releases/download/manager-v1.2.2/AgentPhone233-manager-1.2.2-windows-amd64.zip)：约 **3.44 MB**。
+## 统一下载：1.2.2
 
-大小采用十进制 MB（1 MB = 1,000,000 字节）。管理器独立更新，手机应用的更新入口保持 Android 版本。
+**[下载 APK＋Windows 管理器整合包（83.33 MB）](https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.2/AgentPhone233-1.2.2-all-in-one.zip)**
 
-支持 OpenAI 兼容服务、DeepSeek 和 MiMo 预设、上游模型发现、自定义 BaseURL、设备操作、用量监控和内网管理。应用自动创建私有工作目录；模型 API Key 保存在手机端，不需要交给电脑管理器。
+一次下载即可得到 Android APK、可直接运行的 Windows x64 管理器、使用说明和校验信息。[查看本版所有文件](https://github.com/neko233-com/AgentPhone233-app/releases/tag/v1.2.2)。
 
-## 电脑同时管理多台手机
+需要单独下载时：
 
-1. 解压 Windows 管理器，运行 `AgentPhone233-manager.exe`，在电脑浏览器打开 `http://127.0.0.1:23833`。
-2. 手机安装 APK、配置自己的模型，并按 Android 要求授予无障碍等权限，在手机权限设置中开启局域网管理。
-3. 电脑网页扫描设备，核对手机显示的证书指纹，用配对令牌连接设备。选中多台设备后可以批量发送任务、分别跟进、插话或停止任务，并查看历史和画面。
+- [Android APK（79.89 MB）](https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.2/app-release.apk)：实际应用版本 1.2.0，Android 10 及以上，arm64-v8a。
+- [Windows x64 管理器（约 3.44 MB）](https://github.com/neko233-com/AgentPhone233-app/releases/download/v1.2.2/AgentPhone233-manager-1.2.2-windows-amd64.zip)：实际组件版本 1.2.2。
 
-电脑与手机需要网络互通。管理网页默认监听 `0.0.0.0:23833`，其他内网电脑可访问；手机通道验证证书指纹和令牌，Windows 配对记录由当前用户的 DPAPI 保护。已安装 Android SDK Platform Tools 时，还可通过本机 ADB 模拟器端口转发发现设备。
+发布版本统一为 1.2.2；未变化的 APK 保留真实版本和正式签名。大小统一采用十进制 MB（1 MB = 1,000,000 字节）。
 
-管理器的 `--check-startup` 使用临时数据和随机回环端口自检后自动退出。可用 `--listen 127.0.0.1:23848 --data-dir D:/AgentPhone233-manager-data` 指定端口及独立配对目录；`--run-for 2m` 用于定时诊断并正常退出。
+## 使用方法
 
-其他内网电脑打开 `http://服务器内网IP:23833`。首次连接时，在服务器电脑的 `http://127.0.0.1:23833` 页面点击“显示内网访问码”，然后在其他电脑输入。访问码不写日志，管理器重启后更新。1.2.2 已通过实际 `0.0.0.0` 套接字、内网 IP 浏览器登录及 API、MuMu 内网 HTTP 访问和 UDP leader 发现检查。
+1. 将 app-release.apk 安装到手机，配置自己的模型，按 Android 提示授予权限并开启局域网管理。
+2. 在电脑运行解压后的 manager/AgentPhone233-manager.exe，本机浏览器打开 `http://127.0.0.1:23833`。
+3. 扫描并配对多台手机，即可批量发送任务、分别跟进、插话、停止，并查看历史和手机画面。
 
-## 已验证范围
+管理器默认监听 **0.0.0.0:23833**。其他内网电脑打开 `http://服务器内网IP:23833`；首次访问时，在服务器本机页面点击“显示内网访问码”，然后输入该访问码。访问码不写日志，管理器重启后更新。
 
-DeepSeek 和 MiMo 此前已在 MuMu 完成真实模型卸载、安装 TapTap 并搜索原神等验证。Android 11 及以上可在系统授权后使用内置无线调试，无需另外安装 Shizuku；Google Android 15 模拟器已验证配对、后台屏幕和恢复路径。首次使用仍需授予 Android 系统权限。
+模型 API Key 留在手机端；电脑管理器使用证书指纹和配对令牌连接手机，Windows 配对记录由当前用户的 DPAPI 保护。应用自动创建私有工作目录，提供用量监控和内置无线调试能力。首次使用仍需按 Android 要求授予无障碍等权限。
 
-管理器与两台隔离 MuMu 上的正式 1.2.0 APK，使用本地模型服务验证了网页发现配对、并发手机工具、历史及画面、同时插话、单台停止隔离、离线恢复和管理器重启恢复。正式 EXE 启动自检及 Go 竞态检查通过。多机手机控制测试使用 ADB 转发的证书绑定 TLS；本次按模拟器标准完成验收。
+## 验证与校验
 
-Android 1.2.0 APK SHA-256：`d691a155c4a19c39f74a7951f69c6f678af98b02e8e3e702ef15f697adf02e05`。管理器的校验文件随其 Release 提供。
+两台 MuMu 的正式 APK 已通过多机控制流程，包括发现配对、并发手机工具、历史与画面、同时插话、单台停止隔离、离线恢复和管理器重启恢复。内网 IP 浏览器与 MuMu 登录/API 请求、UDP leader 发现、Go 竞态检查和 EXE 自检通过；DeepSeek/MiMo 此前已完成真实模型手机操作验证。本次按模拟器标准完成验收。
 
-本仓库仅发布安装包、更新清单、说明与许可证，源码仓库保持私有。原项目采用 Apache-2.0，相关依赖许可证随应用提供。
+Release 提供 SHA256SUMS.txt；整合 ZIP 内还包含 components.json 和逐文件校验值。Android APK SHA-256：`d691a155c4a19c39f74a7951f69c6f678af98b02e8e3e702ef15f697adf02e05`。
+
+本仓库仅公开当前整合发布、更新清单、说明及许可证，源码保持私有。基于 [DSH-Android v0.3.8](https://github.com/jackwener/DSH-Android/tree/v0.3.8)，采用 Apache-2.0，依赖许可证随应用提供。
